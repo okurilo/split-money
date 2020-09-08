@@ -8,13 +8,14 @@ export const ProductCardStyled = styled.div`
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
+  width: 100px;
 
-  margin-right: 30px;
+  margin-right: 25px;
   padding: 20px;
 
   background-color: #e7cd14;
   border: 1px solid #e7cd14;
-  border-radius: 15px;
+  border-radius: 20px;
 `;
 
 export const ProductName = styled.div`

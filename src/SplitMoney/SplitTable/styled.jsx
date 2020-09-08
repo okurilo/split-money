@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const SplitTableStyled = styled.div`
   height: 300px;
-  padding: 10px 0px;
+  overflow: auto;
+  padding: 20px 0px;
 
   display: flex;
   flex-direction: row;
@@ -21,14 +22,18 @@ export const PeopleBlockWrapper = styled(SplitTableWrapperBlock)`
   display: flex;
   flex-direction: column;
   flex-grow: 0;
-  flex-basis: 20%;
+  flex-basis: 10%;
+
+  min-width: 100px;
 `;
 
 export const SumBlockWrapper = styled(SplitTableWrapperBlock)`
   display: flex;
   flex-direction: column;
   flex-grow: 0;
-  flex-basis: 20%;
+  flex-basis: 10%;
+
+  min-width: 100px;
 `;
 
 export const ProductBlockWrapper = styled.div`

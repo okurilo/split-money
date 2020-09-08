@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const SplitMoneyStyled = styled.div`
-  padding: 50px 100px;
+  padding: 30px 50px;
+  /* display: inline-block; */
 `;
 
 export const Title = styled.h1``;
