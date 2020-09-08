@@ -11,7 +11,9 @@ export const AddPeople = () => {
       <Input placeholder="Имя"></Input>
       <WrapperButton>
         <Button type="transparent">
-          Новый участник <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
+          <>
+            Новый участник <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
+          </>
         </Button>
       </WrapperButton>
     </AddItemsStyled>

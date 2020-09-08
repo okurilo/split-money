@@ -2,11 +2,25 @@ import React from "react";
 import PropTypes from "prop-types";
 import { InputStyled } from "./styled";
 
-export const Input = ({ placeholder, children }) => {
-  return <InputStyled placeholder={placeholder}>{children}</InputStyled>;
+export const Input = ({ placeholder, type, children, className, onClick }) => {
+  if (type === "checkbox") {
+    return (
+      <input onClick={onClick} className={className} type={type}>
+        {children}
+      </input>
+    );
+  }
+  return (
+    <InputStyled onClick={onClick} type={type} placeholder={placeholder}>
+      {children}
+    </InputStyled>
+  );
 };
 
 Input.propTypes = {
+  type: PropTypes.string,
+  children: PropTypes.element,
   placeholder: PropTypes.string,
-  children: PropTypes.element.isRequired,
+  className: PropTypes.string,
+  onClick: PropTypes.func,
 };

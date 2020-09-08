@@ -26,3 +26,12 @@ export const WrapperInput = styled.div`
 export const WrapperButton = styled.div`
   margin: 5px 0px;
 `;
+
+export const BaseHeightBlock = styled.div`
+  height: 50px;
+`;
+
+export const CostTitle = styled.h4`
+  color: #fff;
+  font-weight: normal;
+`;

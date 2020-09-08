@@ -14,7 +14,9 @@ export const AddProduct = () => {
       </WrapperInput>
       <WrapperButton>
         <Button type="transparent">
-          Новый продукт <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
+          <>
+            Новый продукт <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
+          </>
         </Button>
       </WrapperButton>
     </AddItemsStyled>
