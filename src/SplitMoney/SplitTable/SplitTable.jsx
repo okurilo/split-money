@@ -27,21 +27,19 @@ export const SplitTable = () => {
   const [products, setProducts] = useState(productsMock);
 
   const handleCheckboxSelect = (productId, peopleId, selected) => {
-    // setProducts();
-    // console.log(products, peoples);
-    // console.log(products.map(el => el.id === productId ? {el.peopleIdSelected.push(peopleId), ...el } : el))
-    const result = products.map((product) => {
-      if (product.productId === productId) {
-        return {
-          peopleIdSelected: selected
-            ? product.peopleIdSelected.push(peopleId)
-            : product.peopleIdSelected.filter((el) => el !== productId),
-          ...product,
-        };
-      }
-      return product;
-    });
-    console.log(result);
+    setProducts(
+      products.map((product) => {
+        if (product.productId === productId) {
+          return {
+            ...product,
+            peopleIdSelected: selected
+              ? product.peopleIdSelected.concat([peopleId])
+              : product.peopleIdSelected.filter((el) => el !== productId),
+          };
+        }
+        return product;
+      })
+    );
   };
 
   return (
